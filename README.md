@@ -5,6 +5,7 @@ This docker image [rotates akamai api credentials](https://techdocs.akamai.com/i
 
 ```shell
 $ git clone git@github.com:yuichiro12/akamai-credentials-rotator.git
+$ cd akamai-credentials-rotator
 $ docker build . -t akamai-credentials-rotator
 # requires AWS credentials to run locally
 $ docker run --rm -it -v $HOME/.aws:/root/.aws akamai-credentials-rotator ./rotate.sh /path1/to/parameters /path2/to/parameters
